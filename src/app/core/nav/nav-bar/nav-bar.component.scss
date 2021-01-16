@@ -1,3 +1,7 @@
+@import '../../../../color';
+@import '../../../../devices';
+
+
 // Variables
 $nav-bar-height: 80px;
 $nav-bar-side-padding: 20px;
@@ -10,10 +14,9 @@ $nav-bar-side-padding: 20px;
     padding-right: $nav-bar-side-padding;
 }
 
-
-
 // Navigation
-.top-nav {
+.top-nav-left, .top-nav-right {
+    float: left;
     height: $nav-bar-height;
 
     // Centering contents vertically
@@ -31,10 +34,45 @@ $nav-bar-side-padding: 20px;
         display: inline-block;
         margin-right: 4vw;
     }
-    i {
-        display: inline-block;
+}
+
+.top-nav-left {
+    float: left;
+}
+
+.top-nav-right {
+    float: right;
+}
+
+.resume-button-container {
+    text-align: center;
+    a {
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 10px;
+        transition: background-color 0.2s;
+        &:hover {
+            background-color: $emphasized-background-color;
+        }
     }
-    button {
-        outline: inherit;
+}
+
+@include phone {
+    .top-nav-left {
+        width: 100%;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10vw;
+        }
+        li {
+            display: inline-block;
+            margin: 0vw;
+        }
+    }
+
+    .top-nav-right{
+        display: none;
     }
 }

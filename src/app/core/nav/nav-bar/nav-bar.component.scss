@@ -1,0 +1,40 @@
+// Variables
+$nav-bar-height: 80px;
+$nav-bar-side-padding: 20px;
+
+// Main
+.main {
+    overflow: hidden;
+    display: block;
+    padding-left: $nav-bar-side-padding;
+    padding-right: $nav-bar-side-padding;
+}
+
+
+
+// Navigation
+.top-nav {
+    height: $nav-bar-height;
+
+    // Centering contents vertically
+    display: flex;
+    align-items: center;
+
+    // Color
+    color: var(--special-text-color);
+    ul {
+        // No bullet points or margin
+        margin: 0px;
+        list-style: none;
+    }
+    li {
+        display: inline-block;
+        margin-right: 4vw;
+    }
+    i {
+        display: inline-block;
+    }
+    button {
+        outline: inherit;
+    }
+}

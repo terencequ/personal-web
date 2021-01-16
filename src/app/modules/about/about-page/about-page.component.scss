@@ -1,0 +1,94 @@
+@import "../../../../color";
+@import "../../../../devices";
+
+.main {
+    max-width: 900px;
+    width: 90vw;
+    display: block;
+    margin: auto;
+    padding-top: 2vh;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+i {
+    display: inline-block;
+    font-size: 2rem;
+    margin-right: 2vh;
+    width: 40px;
+    text-align: left;
+}
+
+p {
+    display: inline-block;
+}
+
+.emphasize {
+    color: $emphasized-text-color;
+    margin: auto 0.5rem;
+}
+
+@include desktop {
+    .hide-on-desktop {
+        display : none;
+    }
+}
+
+@include tablet {
+    .hide-on-tablet {
+        display : none;
+    }
+}
+
+// Responsive styling
+@include phone {
+    .main {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .hide-on-phone {
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 5vw;
+
+        li {
+            display: inline-block;
+        }
+    }
+
+    i {
+        font-size: 4rem;
+        width: auto;
+        margin: 0;
+    }
+
+    .resume-button-container {
+        text-align: center;
+        margin-top: 5vh;
+        a {
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 10px;
+            font-size: 2rem;
+            font-weight: 300;
+            transition: background-color 0.2s;
+            &:hover {
+                background-color: $emphasized-background-color;
+            }
+        }
+    }
+}

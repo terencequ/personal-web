@@ -31,4 +31,4 @@ jobs:
         app-name: 'terence-qu-portfolio-front-end'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_167f8774d6df4e4eb0b95f11d4a3ce8f }}
-        package: ./dist
+        package: ./PersonalWeb/dist

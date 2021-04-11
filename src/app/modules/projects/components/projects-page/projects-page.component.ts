@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import Card from '../../models/card';
+import { ProjectsService } from '../../services/projects.service';
 
 @Component({
   selector: 'app-projects-page',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsPageComponent implements OnInit {
 
-  constructor() { }
+  cards: Card[];
+
+  constructor(private projectsService: ProjectsService) {}
 
   ngOnInit(): void {
+    this.cards = this.projectsService.getCards()
   }
 
 }

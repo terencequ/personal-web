@@ -1,0 +1,30 @@
+@import "../../../../../color";
+@import "../../../../../devices";
+
+.main {
+    width: 90vw;
+    display: block;
+    margin: auto;
+    padding-top: 2vh;
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+}
+
+// Responsive styling
+@include phone {
+    .main {
+        font-size: 2rem;
+    }
+
+    .card {
+        display: inline-block;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}

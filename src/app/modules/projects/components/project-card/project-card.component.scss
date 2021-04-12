@@ -1,0 +1,39 @@
+@import "../../../../../color";
+@import "../../../../../devices";
+
+.main {
+    display: inline-block;
+    height: 150px;
+    width: 300px;
+    padding: 20px;
+    background-color: $emphasized-background-color;
+    transition: background-color 0.2s;
+    &:hover {
+        background-color: $more-emphasized-background-color;
+    }
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: block;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+    display: block;
+}
+
+a {
+    display: inline-block;
+    margin: 20px;
+}
+
+// Responsive styling
+@include phone {
+    .main {
+        display: block;
+        max-width: 90%;
+    }
+}

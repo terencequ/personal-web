@@ -1,0 +1,6 @@
+<div class="main">
+    <h2>Projects</h2>
+    <div *ngFor = "let card of cards" class="card">
+        <app-project-card [card]="card"></app-project-card>
+    </div>
+</div>

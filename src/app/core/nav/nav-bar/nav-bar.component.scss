@@ -48,8 +48,6 @@ $nav-bar-side-padding: 20px;
     text-align: center;
     a {
         padding: 10px;
-        border: 1px solid;
-        border-radius: 10px;
         transition: background-color 0.2s;
         &:hover {
             background-color: $emphasized-background-color;

@@ -3,10 +3,14 @@
 
 .main {
     display: inline-block;
-    height: 100px;
+    height: 150px;
     width: 300px;
     padding: 20px;
     background-color: $emphasized-background-color;
+    transition: background-color 0.2s;
+    &:hover {
+        background-color: $more-emphasized-background-color;
+    }
 }
 
 h1 {

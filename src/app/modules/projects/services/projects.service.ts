@@ -8,14 +8,10 @@ export class ProjectsService {
 
   private cards: Card[] = [
     {
-      title: "DnD Character Creator",
-      description: "React, MongoDB, Express",
-      href: "https://charactercreator.terencequ.com"
-    },
-    {
-      title: "Chicken Voyage",
-      description: "Angular, SQL, .NET",
-      href: "https://chickenvoyage.terencequ.com"
+      title: "Oat Milk",
+      description: "DnD All Purpose Web App",
+      technologies: "Angular, .NET 5, Docker",
+      href: "https://oatmilk.terencequ.com/"
     }
   ]
 

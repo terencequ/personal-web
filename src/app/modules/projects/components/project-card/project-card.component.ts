@@ -9,8 +9,7 @@ import Card from '../../models/card';
 export class ProjectCardComponent implements OnInit {
 
   @Input()
-  card: Card
-  
+  card: Card;
   constructor() { }
 
   ngOnInit(): void {

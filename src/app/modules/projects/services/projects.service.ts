@@ -8,16 +8,16 @@ export class ProjectsService {
 
   private cards: Card[] = [
     {
-      title: "Oat Milk",
-      description: "DnD All Purpose Web App",
-      technologies: "Angular, .NET 5, Docker",
-      href: "https://oatmilk.terencequ.com/"
+      title: 'Oat Milk',
+      description: 'DnD All Purpose Web App',
+      technologies: 'Angular, .NET 5, Docker',
+      href: 'https://oatmilk.terencequ.com/'
     }
-  ]
+  ];
 
   constructor() { }
 
-  getCards(){
+  getCards(): Card[]{
     return this.cards;
   }
 }
